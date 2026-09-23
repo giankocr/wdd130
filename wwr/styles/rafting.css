@@ -17,7 +17,7 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     line-height: 1.5;
-    background: #fff;
+    background: var(--secondary-color);
 }
 
 header,
