@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #164e63;
-    --secondary-color: #e9f6f8;
-    --accent-color: #087e8b;
-    --text-color: #222;
+    --primary-color: #1f3b6d;
+    --secondary-color: #dbeaf5;
+    --accent1-color: #222;
+    --accent2-color: #fff;
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
 }
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--text-color);
+    color: var(--accent1-color);
     line-height: 1.5;
     background: #fff;
 }
@@ -68,7 +68,7 @@ h2 {
 }
 
 .logo span {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-size: 1.35rem;
 }
 
@@ -92,20 +92,29 @@ article {
     object-fit: cover;
 }
 
-.intro {
-    margin: 1rem 0;
+.hero h1 {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    color: var(--accent2-color);
+    background-color: rgba(31, 59, 109, 0.9);
 }
 
-.intro h1 {
-    margin: 0 0 1rem;
-    color: #111;
-}
-
-.intro article {
+.hero article {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    min-height: 7rem;
     margin: 0;
+    padding: 1rem;
+    color: var(--accent2-color);
+    background-color: rgba(31, 59, 109, 0.85);
 }
 
-.intro article img {
+.hero article img {
     float: right;
     width: 125px;
     height: 145px;
@@ -118,7 +127,11 @@ section {
 }
 
 section h2 {
+    padding: 0.75rem;
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 footer {
