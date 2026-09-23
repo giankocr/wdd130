@@ -25,6 +25,11 @@ nav a {
     text-decoration: none;
 }
 
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+}
+
 main {
     max-width: 800px;
     margin: 1rem auto;
@@ -69,6 +74,7 @@ ul a {
 }
 
 /* Class Selectors */
+
 .box {
     margin: 1rem auto;
     border: 1px solid #333;
@@ -108,4 +114,8 @@ footer {
     border-top: 1px solid black;
     text-align: center;
     padding: 1rem;
+}
+ .grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
